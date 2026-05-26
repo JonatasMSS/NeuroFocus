@@ -1,9 +1,12 @@
 
 
 class Processor():
-    def __init__(self):
-        pass
+    def __init__(self, pipeline:list[any] = None):
+        self.pipeline = pipeline or []
 
     def process(self, data):
-        pass
+        output = None
+        for step in self.pipeline:
+            output = step.process(data)
+        return output
     
