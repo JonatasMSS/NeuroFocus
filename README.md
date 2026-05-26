@@ -26,7 +26,7 @@ Cada classe terá que ter a seguinte estrutura
 class NomeClasse():
     def __init__(self):
         pass #dados de recebimento
-    def process(self): # Aqui onde ocorrerá o processamento. Deverá retornar o resultado do processamento.
+    def process(self,data): # Aqui onde ocorrerá o processamento. Deverá retornar o resultado do processamento. Em data, será o que ele vai receber em cada passo
         pass
 
 ```
