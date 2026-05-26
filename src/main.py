@@ -25,3 +25,4 @@ if __name__ == "__main__":
     ]
 
     processor = Processor(pipeline=pipeline)
+    processor.process(df) # Processando o DataFrame com os passos definidos na pipeline
